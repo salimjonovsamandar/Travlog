@@ -25,6 +25,7 @@ body {
 
 .logo a {
   width: 142px;
+  /* border: none; */
 }
 
 .nav ul {
@@ -92,6 +93,8 @@ body {
   .container {
     max-width: 896px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .solid {
@@ -106,9 +109,11 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
   .container {
     width: 398px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .solid {
     display: block;
@@ -273,6 +278,33 @@ body {
   justify-content: space-between;
   list-style: none;
 }
+/* 
+@media screen and (max-width: 1024px) {
+  .hero__container {
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    max-width: 896px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .explore {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__text {
+    margin-top: 650px;
+  }
+
+  .hero__text h3,
+  p {
+    width: 896px;
+  }
+} */
 
 /* Services style */
 .services__container {
@@ -427,3 +459,4 @@ div.star {
   align-items: center;
   margin-top: 32px;
 }
+
