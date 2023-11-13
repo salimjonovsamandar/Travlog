@@ -411,6 +411,10 @@ body {
   line-height: 120%; /* 52.8px */
   width: 444px;
 }
+.services__card__main{
+  display: flex;
+  gap: 21px;
+}
 
 .services__card {
   display: flex;
@@ -445,6 +449,69 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 28.8px */
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 896px;
+  }
+
+  .services__container {
+    flex-direction: column;
+  }
+  .services__text{
+    width: 896px;
+    text-align: center;
+  }
+  .services__text h3{
+    width: 896px;
+    margin-bottom: 64px;
+  }
+  .services__card__main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+.services__card h4{
+width: 160px;
+}
+
+  .services__card p{
+width: 160px;
+align-items: center;
+display: inline-block;
+margin-right: -250px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    width: 398px;
+  }
+
+  .services__text h3 {
+    font-size: 32px;
+    font-weight: 700;
+line-height: 120%;
+    width: 398px;
+    margin-left: 250px;
+  }
+  .services__card__main{
+    flex-direction: column;
+  }
+  .services__card{
+    width: 398px;
+    padding: 64px;
+  }
+  .services__card h4{
+    width: 334px;
+    margin-bottom: -32px;
+  }
+  .services__card p{
+    width: 330px;
+  }
 }
 
 /* Destination styles */
@@ -539,6 +606,56 @@ div.star {
   margin-top: 32px;
 }
 
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 896px;
+  }
+
+  .destination__top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .destination__top h2 {
+    margin-bottom: 64px;
+    margin-top: 16px;
+  }
+  .destination__card{
+    width: 278px;
+    
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    width: 398px;
+  }
+
+  .services__text h3 {
+    font-size: 32px;
+    font-weight: 700;
+line-height: 120%;
+    width: 398px;
+    margin-left: 250px;
+  }
+  .services__card__main{
+    flex-direction: column;
+  }
+  .services__card{
+    width: 398px;
+    padding: 64px;
+  }
+  .services__card h4{
+    width: 334px;
+    margin-bottom: -32px;
+  }
+  .services__card p{
+    width: 330px;
+  }
+}
+
+
+
 /* Travel style */
 
 .container_big {
@@ -602,7 +719,7 @@ div.star {
   gap: 16px;
   flex: 1 0 0;
   border-radius: 32px;
-  border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
+  border:grey-scale-black-10, rgba(25, 24, 37, 0.1));
   background: var(--white, #fff);
 
   width: 204.5px;
@@ -715,6 +832,7 @@ div.star {
 .testimonials {
   background: url(../img/background__testimonial.svg);
   background-repeat: no-repeat;
+
   background-size: cover;
   background-position: 0px -200px;
 }
